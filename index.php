@@ -7,4 +7,8 @@ $array = [1,2,3,4,5];
 echo Calculator::Sum($array) . "<br>";
 echo Calculator::Subtract(7,5) . "<br>";
 echo Calculator::Multiply($array) . "<br>";
-echo Calculator::Divide(20,2);
+echo Calculator::Divide(20,2) . "<br><br>";
+
+echo Calculator::rectangle_area(3,5) . "<br>";
+echo Calculator::circumference(5) . "<br>";
+echo Calculator::circle_area(5);
