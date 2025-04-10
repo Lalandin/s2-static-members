@@ -1,21 +1,10 @@
 <?php
-require_once 'classes/Product.php';
+require_once 'classes/Calculator.php';
 
-
-//$shiing er static og bliver ikke en del af objektet
-//men er en del af klassen
-$gta5 = new Product;
-$gta5->title = "GTA V";
-$gta5->price = 299;
-
-$cyberpunk = new Product;
-$cyberpunk->title = "Cyberpunk 2077";
-$cyberpunk->price = 499;
-
-//Her sættes $shipping til en ny værdi
-Product::$shipping = 40;
-
-var_dump($gta5);
-var_dump($cyberpunk);
-
-echo Product::$shipping;
+//Array med tal
+$array = [1,2,3,4,5];
+//Udskrift af statiske metoder
+echo Calculator::Sum($array) . "<br>";
+echo Calculator::Subtract(7,5) . "<br>";
+echo Calculator::Multiply($array) . "<br>";
+echo Calculator::Divide(20,2);
